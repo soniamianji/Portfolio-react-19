@@ -1,0 +1,99 @@
+.homepage {
+  height: 100vh;
+}
+.textNav {
+  font-family: automate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dd5341;
+}
+.myName {
+  font-family: automate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dd5341;
+  top: 40%;
+}
+.about {
+  height: 100vh;
+}
+.leftSideAbout {
+  height: 100vh;
+  width: 50%;
+  position: relative;
+}
+/* .navHolder {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+} */
+.navHolderbout {
+  position: absolute;
+  top: 90%;
+  left: 35%;
+}
+
+.sectionText {
+  font-family: automate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dd5341;
+  top: 30%;
+}
+.sectionTextContact {
+  font-family: automate, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #dd5341;
+  top: 30%;
+}
+.rightSideAbout {
+  height: 100vh;
+  width: 50%;
+  font-family: automate, sans-serif;
+}
+
+.projects {
+  height: 100vh;
+}
+.rightSideprojects {
+  background-image: url("https://i.pinimg.com/736x/a4/8a/eb/a48aeb33f62b8a9f3d5af97abbe89fa0--poster-design-inspiration-take-risks.jpg");
+  background-attachment: fixed;
+  background-color: none;
+}
+.leftSideprojects {
+  height: 100vh;
+  width: 50%;
+}
+
+.contact {
+  height: 100vh;
+}
+
+.lastSection {
+  height: 100vh;
+  position: relative;
+}
+
+.linkBtn {
+  top: 60%;
+}
+
+.projectItem {
+  padding: 100px;
+  border: #dd5341 2px solid;
+}
+.appRedesign {
+  background-image: url("./images/appRedesign.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.appRedesign:hover {
+  opacity: 1;
+}
+
+.pic {
+  background-image: url("https://i.pinimg.com/736x/a4/8a/eb/a48aeb33f62b8a9f3d5af97abbe89fa0--poster-design-inspiration-take-risks.jpg");
+  background-attachment: fixed;
+}
