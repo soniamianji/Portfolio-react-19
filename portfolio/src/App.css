@@ -78,22 +78,3 @@
 .linkBtn {
   top: 60%;
 }
-
-.projectItem {
-  padding: 100px;
-  border: #dd5341 2px solid;
-}
-.appRedesign {
-  background-image: url("./images/appRedesign.jpg");
-  background-position: center;
-  background-size: cover;
-  opacity: 0.5;
-}
-.appRedesign:hover {
-  opacity: 1;
-}
-
-.pic {
-  background-image: url("https://i.pinimg.com/736x/a4/8a/eb/a48aeb33f62b8a9f3d5af97abbe89fa0--poster-design-inspiration-take-risks.jpg");
-  background-attachment: fixed;
-}
