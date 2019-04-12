@@ -17,7 +17,6 @@ class Home extends Component {
   }
 
   scrollToMyRef = () => {
-    console.log("hey");
     window.scrollTo(0, this.myRef.current.offsetTop);
   };
 
@@ -31,9 +30,6 @@ class Home extends Component {
           <h1 className="myName position-absolute display-2 pt-5">
             Sonia Mianji Johnsson
           </h1>
-          <div className="position-absolute">
-            <NavBar scroll={this.scrollToMyRef} />
-          </div>
         </section>
         <section className="about row bg-white">
           <div className="leftSideAbout d-flex justify-content-center bg-warning col">

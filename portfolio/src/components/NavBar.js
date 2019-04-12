@@ -4,7 +4,7 @@ class NavBar extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="navbar navbar-expand-md bg-transparent justify-content-center">
+        <nav className="navbar navbar-expand-md bg-dark justify-content-center">
           <button
             className="navbar-toggler ml-1"
             type="button"

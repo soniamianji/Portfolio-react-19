@@ -10,7 +10,8 @@ import {
   withRouter
 } from "react-router-dom";
 import Projects from "./components/page/Projects";
-import AppRedesign from "./components/projects/AppRedesign";
+import ProjectPage from "./components/projects/ProjectPage";
+import NavBar from "./components/NavBar";
 
 const GlobalRoute = ({ component: Component, ...rest }) => (
   <Route {...rest} render={props => <Component {...props} {...rest} />} />
@@ -21,9 +22,10 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
+            <NavBar />
             <GlobalRoute exact path="/" component={Home} />
-            <GlobalRoute path="/projects" component={Projects} />
-            <GlobalRoute path="/appRedesign" component={AppRedesign} />
+            <GlobalRoute exact path="/projects/" component={Projects} />
+            <GlobalRoute path="/projects/:title" component={ProjectPage} />
           </div>
         </Router>
       </div>
