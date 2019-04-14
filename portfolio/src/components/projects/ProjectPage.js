@@ -28,15 +28,7 @@ class ProjectPage extends Component {
             </div>
           </li>
         </ul>
-        {/*<div className="row p-5">
-          <div className="col-md bg-dark text-center text-white">
-            <h3> {data.header}</h3>
-          </div>
-          <div className="col-md bg-dark text-center text-white">
-            <h3>{data.date}</h3>
-            <h4> {data.role}</h4>
-          </div>
-    </div>*/}
+
         {data &&
           data.content.map((item, i) => {
             return item.type === "text" ? (

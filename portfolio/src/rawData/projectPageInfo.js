@@ -32,12 +32,12 @@ let Data = [
           type: "img",
           src: [
             "../../../imgs/branding/Branding-01.png",
-            "../../../imgs/branding/Branding-02.png",
+            "../../../imgs/branding/Branding-02.jpg",
+            "../../../imgs/branding/stationer.jpg",
             "../../../imgs/branding/Branding-03.png",
             "../../../imgs/branding/Branding-04.png",
             "../../../imgs/branding/Branding-05.png",
-            "../../../imgs/branding/Branding-06.png",
-            "../../../imgs/branding/Branding-07.png"
+            "../../../imgs/branding/Branding-06.png"
           ]
         },
         {
@@ -64,6 +64,54 @@ let Data = [
             "../../../imgs/layout/phototutOne.gif"
           ]
         },
+        {
+          type: "text",
+          parag: "bvh bsga bsvag bs"
+        }
+      ]
+    }
+  },
+  {
+    title: "posters",
+    data: {
+      date: "FALL || 2017",
+      header: "Digital Posters",
+      role: "Graphic designer",
+      content: [
+        {
+          type: "img",
+          src: [
+            "../../../imgs/posters/postersTogether.jpg",
+            "../../../imgs/posters/posterStreetOne.jpg",
+            "../../../imgs/posters/swiss.gif",
+            "../../../imgs/posters/streetPosterTwo.jpg",
+            "../../../imgs/posters/cubism.gif"
+          ]
+        },
+
+        {
+          type: "text",
+          parag: "bvh bsga bsvag bs"
+        }
+      ]
+    }
+  },
+  {
+    title: "inforGraphic",
+    data: {
+      date: "FALL || 2017",
+      header: "Digital Posters",
+      role: "Graphic designer",
+      content: [
+        {
+          type: "img",
+          src: [
+            "../../../imgs/infoGraphic/infoGraphicOne.jpg",
+
+            "../../../imgs/infoGraphic/infoGraphicTwo.png"
+          ]
+        },
+
         {
           type: "text",
           parag: "bvh bsga bsvag bs"

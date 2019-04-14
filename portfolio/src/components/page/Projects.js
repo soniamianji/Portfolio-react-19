@@ -28,8 +28,8 @@ class Projects extends Component {
       return "/projects/" + title;
     };
     return (
-      <div className="projectContainer bg-dark  ">
-        <div class="row p-5">
+      <div className="projectContainer bg-dark">
+        <div class="row pt-5 w-75 mx-auto">
           {content &&
             content.map((item, i) => {
               return iterate == 5 ? (

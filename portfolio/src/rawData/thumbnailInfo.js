@@ -6,15 +6,15 @@ let Data = [
     description: "Some explanations the project One"
   },
   {
-    title: "SomethingElse",
-    header: "App Redesign",
-    image: "../images/appRedesign.jpg",
+    title: "posters",
+    header: "Digital Posters",
+    image: "../imgs/posters/postersTogether.jpg",
     description: "Some explanations regarding the project Six"
   },
   {
     title: "layOut",
     header: "App Redesign",
-    image: "../../imgs/layout/AiTutTwo.jpg",
+    image: "../../imgs/thumbnail/aiTutorial.gif",
     description: "Some explanations regarding the layOut"
   },
   {
@@ -24,9 +24,9 @@ let Data = [
     description: "Graphical identity, Bönderna Windery"
   },
   {
-    title: "webdesign",
+    title: "inforGraphic",
     header: "App Redesign",
-    image: "../images/appRedesign.jpg",
+    image: "../imgs/thumbnail/info.jpg",
     description: "Some explanations regarding the project Five"
   },
   {

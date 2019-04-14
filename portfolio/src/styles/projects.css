@@ -4,6 +4,7 @@
 .projectItems {
   position: relative;
   height: 400px;
+  width: 100%;
 }
 .bgCustom {
   background-color: #dd5341;
@@ -12,9 +13,9 @@
 .image {
   opacity: 1;
   display: block;
-  height: auto;
+  height: 100%;
   width: 100%;
-  ransition: 0.5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 .middle {

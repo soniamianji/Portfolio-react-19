@@ -31,26 +31,21 @@ class Home extends Component {
             Sonia Mianji Johnsson
           </h1>
         </section>
+
         <section className="about row bg-white">
-          <div className="leftSideAbout d-flex justify-content-center bg-warning col">
-            <h2
-              className="sectionText position-absolute display-2 pt-5 display-2
-      "
-            >
+          <div className="leftSideAbout bg-warning col-md ">
+            <h2 className="sectionText d-flex justify-content-center display-2 pt-5">
               About
             </h2>
           </div>
-          <div className="rightSideAbout bg-white col">
+          <div className="col-md rightSideAbout bg-white">
             <About />
           </div>
         </section>
 
         <section className="projects row bg-white">
-          <div className="leftSideprojects d-flex justify-content-center bg-white col ">
-            <h2
-              className="sectionText position-absolute display-2 pt-5 
-  "
-            >
+          <div className="leftSideprojects d-flex justify-content-center bg-white col-md ">
+            <h2 className="sectionText position-absolute display-2 pt-5">
               Works
             </h2>
             <div className="linkBtn position-absolute">
@@ -64,23 +59,19 @@ class Home extends Component {
               </AwesomeButtonProgress>
             </div>
           </div>
-          <div className="rightSideprojects col" />
+          <div className="rightSideprojects col-md" />
         </section>
 
-        <section
-          ref={this.myRef}
-          id="contactMe"
-          className="contact row bg-white"
-        >
-          <div className="leftSideContact d-flex justify-content-center bg-warning col">
+        <section id="contactMe" className="contact row bg-white">
+          <div className="leftSideContact d-flex justify-content-center bg-warning col-md">
             <h2
-              className="sectionTextContact position-absolute display-2 pt-5 
+              className="sectionText  display-2 pt-5 
 "
             >
               Contact me
             </h2>
           </div>
-          <div className="rightSideContact  bg-white col">
+          <div className="rightSideContact  bg-white col-md">
             <Contact />
           </div>
         </section>
