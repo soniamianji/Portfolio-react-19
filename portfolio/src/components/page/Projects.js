@@ -29,12 +29,12 @@ class Projects extends Component {
     };
     return (
       <div className="projectContainer bg-dark">
-        <div class="row pt-5 w-75 mx-auto">
+        <div class="projectItemHolder">
           {content &&
             content.map((item, i) => {
               return iterate == 5 ? (
                 <React.Fragment>
-                  <div class="col-sm-10 col-lg-8 p-0 projectItems">
+                  <div className="p-0 projectItems thumb_big">
                     <Link to={urlGenerator(item.title)}>
                       {<img src={item.image} className="image" />}
                       <div class="middle">
@@ -47,11 +47,11 @@ class Projects extends Component {
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  <div class="col-xs-12 col-sm-10 col-md-6 col-lg-4 p-0 projectItems">
+                  <div className=" p-0 projectItems thumb_small">
                     <Link to={urlGenerator(item.title)}>
                       {<img src={item.image} className="image" />}
                       <div class="middle">
-                        <div class="text">{item.description}"kossher"</div>
+                        <div class="text">{item.description}</div>
                       </div>
                     </Link>
                   </div>

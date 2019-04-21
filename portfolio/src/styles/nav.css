@@ -1,0 +1,45 @@
+.container {
+  width: 960px;
+}
+.nav {
+  padding-top: 40px;
+  list-style: none;
+}
+.nav > ul {
+  list-style: none outside;
+}
+.nav > ul > li:last-child {
+  padding-right: 20px;
+}
+.nav > ul > li {
+  display: inline;
+  padding-left: 20px;
+  line-height: 18px;
+}
+
+.nav > ul > li > a {
+  color: #dd5341;
+  text-decoration: none;
+}
+
+.nav > ul > li > a:hover {
+  color: darkgoldenrod;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 420px;
+  }
+  .nav {
+    float: left;
+    clear: both;
+    width: 100%;
+  }
+  .nav > ul {
+    padding-left: 0 !important;
+  }
+  .nav > ul > li:first-child {
+    padding-left: 0;
+  }
+}

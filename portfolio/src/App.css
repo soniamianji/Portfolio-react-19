@@ -8,6 +8,7 @@
 .lastSection {
   height: 100vh;
 }
+
 .textNav {
   font-weight: 700;
   font-style: normal;
@@ -17,21 +18,41 @@
   color: #dd5341;
   top: 40%;
 }
+.descHolder {
+  display: block;
+}
 
+.descHolder > button,
+h3 {
+  margin-top: 30px;
+
+  display: inline-block;
+}
+.descHolder > button {
+  float: right;
+}
+.yellowColor {
+  color: darkgoldenrod;
+}
+
+.homepage,
 .leftSideAbout,
 .rightSideAbout,
 .rightSideprojects,
 .leftSideprojects,
 .leftSideContact,
-.rightSideContact {
+.rightSideContact,
+.lastSection {
   position: relative;
-  width: 50%;
+  min-height: 600px !important;
 }
 
 .sectionText {
   font-weight: 700;
   font-style: normal;
   color: #dd5341;
+  position: absolute;
+  top: 30%;
 }
 
 .rightSideprojects {
@@ -39,21 +60,50 @@
   background-attachment: fixed;
   background-color: none;
 }
+.leftSideprojects > .sectionText {
+  bottom: 5px;
+}
 
 .linkBtn {
-  top: 60%;
+  top: 40%;
 }
-/* @media only screen and (max-width: 600px) {
-  .leftSideAbout,
-  .rightSideAbout,
-  .rightSideprojects,
-  .leftSideprojects,
-  .leftSideContact,
-  .rightSideContact,
+
+@media only screen and (max-width: 600px) {
+  .homepage,
+  .about,
+  .projects,
+  .contact,
   .lastSection {
-    width: 100%;
+    height: auto;
   }
-  .rightSideAbout {
-    height: 500px;
+  .myName {
+    color: #dd5341;
+    top: 20%;
   }
-} */
+  .descHolder > button,
+  h3 {
+    float: left;
+    display: block;
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 760px) and (min-width: 600px) {
+  .homepage,
+  .about,
+  .projects,
+  .contact,
+  .lastSection {
+    height: auto;
+  }
+  .myName {
+    top: 15%;
+    left: 15%;
+  }
+  .descHolder > button,
+  h3 {
+    float: left;
+    display: block !important;
+    clear: both;
+  }
+}

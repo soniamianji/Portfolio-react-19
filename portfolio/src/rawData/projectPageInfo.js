@@ -118,6 +118,28 @@ let Data = [
         }
       ]
     }
+  },
+  {
+    title: "RespoGraph",
+    data: {
+      date: "FALL || 2017",
+      header: "Responsive Graphic",
+      role: "Graphic designer",
+      content: [
+        {
+          type: "img",
+          src: [
+            "../../../imgs/respoGraph/fish.gif",
+            "../../../imgs/respoGraph/fishRespo.gif"
+          ]
+        },
+
+        {
+          type: "text",
+          parag: "bvh bsga bsvag bs"
+        }
+      ]
+    }
   }
 ];
 

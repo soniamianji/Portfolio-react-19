@@ -8,7 +8,8 @@ import {
   AwesomeButtonProgress,
   AwesomeButtonSocial
 } from "react-awesome-button";
-import { AwesomeButtonStyles } from "react-awesome-button/src/styles/themes/theme-eric/styles.scss";
+// import { AwesomeButtonStyles } from "react-awesome-button/src/styles/themes/theme-eric/styles.scss";
+import { AwesomeButtonStyles } from "react-awesome-button/src/styles/themes/theme-amber/styles.scss";
 
 class Home extends Component {
   constructor(props) {
@@ -17,9 +18,22 @@ class Home extends Component {
   }
 
   scrollToMyRef = () => {
-    window.scrollTo(0, this.myRef.current.offsetTop);
+    console.log("go");
+    const myref = this.myRef.current;
+    window.scrollTo({
+      top: myref.offsetTop,
+      left: 0,
+      behavior: "instant"
+    });
   };
-
+  componentDidMount() {
+    this.props.refCallBack(this.scrollToMyRef);
+  }
+  // componentWillMount() {
+  //   if (this.props.location.pathname !== "/") {
+  //     this.scrollToMyRef();
+  //   }
+  // }
   doSomethingThenCall = () => {
     this.props.history.push("/projects");
   };
@@ -27,16 +41,24 @@ class Home extends Component {
     return (
       <div>
         <section className="homepage bg-dark d-flex justify-content-center">
-          <h1 className="myName position-absolute display-2 pt-5">
+          <h1 className="myName position-absolute display-3 ">
             Sonia Mianji Johnsson
+            <div className="descHolder">
+              <h3 className="yellowColor">Code Monkey in training</h3>
+              <AwesomeButton
+                type="primary"
+                cssModule={AwesomeButtonStyles}
+                size="large"
+              >
+                Hire me!
+              </AwesomeButton>
+            </div>
           </h1>
         </section>
 
         <section className="about row bg-white">
-          <div className="leftSideAbout bg-warning col-md ">
-            <h2 className="sectionText d-flex justify-content-center display-2 pt-5">
-              About
-            </h2>
+          <div className="leftSideAbout bg-warning d-flex justify-content-center col-md ">
+            <h2 className="sectionText  display-4 pt-5">About</h2>
           </div>
           <div className="col-md rightSideAbout bg-white">
             <About />
@@ -45,27 +67,31 @@ class Home extends Component {
 
         <section className="projects row bg-white">
           <div className="leftSideprojects d-flex justify-content-center bg-white col-md ">
-            <h2 className="sectionText position-absolute display-2 pt-5">
+            <h2 className="sectionText position-absolute d-flex justify-content-center display-4 pt-5">
               Works
+              <div className="linkBtn position-absolute ">
+                <AwesomeButtonProgress
+                  type="link"
+                  size="large"
+                  cssModule={AwesomeButtonStyles}
+                  action={(element, next) => this.doSomethingThenCall(next)}
+                >
+                  See More!
+                </AwesomeButtonProgress>
+              </div>
             </h2>
-            <div className="linkBtn position-absolute">
-              <AwesomeButtonProgress
-                type="secondary"
-                size="large"
-                cssModule={AwesomeButtonStyles}
-                action={(element, next) => this.doSomethingThenCall(next)}
-              >
-                See More!
-              </AwesomeButtonProgress>
-            </div>
           </div>
           <div className="rightSideprojects col-md" />
         </section>
 
-        <section id="contactMe" className="contact row bg-white">
+        <section
+          ref={this.myRef}
+          id={"#contact"}
+          className="contact row bg-white"
+        >
           <div className="leftSideContact d-flex justify-content-center bg-warning col-md">
             <h2
-              className="sectionText  display-2 pt-5 
+              className="sectionText position-absolute  display-4 pt-5 
 "
             >
               Contact me
