@@ -87,6 +87,9 @@ button > span > span > span > a {
   padding-right: 40px;
   padding-left: 40px;
 }
+.textAboutWrapper::-webkit-scrollbar {
+  display: none;
+}
 
 .textAboutWrapper > .row > .col-sm-12 > h2 {
   color: #dd5341;
