@@ -74,6 +74,7 @@ button > span > span > span > a {
   width: 200px;
 } */
 
+<<<<<<< HEAD
 .textAboutWrapper > .row > .col-sm-12 > h2 {
   color: #dd5341;
 }
@@ -96,14 +97,32 @@ h6 {
 .textAboutWrapper > p {
   font-family: "Karla", sans-serif !important;
 }
+=======
+.homepage,
+.leftSideAbout,
+.rightSideAbout,
+.rightSideprojects,
+.leftSideprojects,
+.leftSideContact,
+.rightSideContact,
+.lastSection {
+  position: relative;
+  min-height: 600px !important;
+}
+
+>>>>>>> a14ec314984790bf2da85da15bdd96f7e77e9f3d
 .sectionText {
   font-weight: 700;
   font-style: normal;
   color: #dd5341;
   position: absolute;
+<<<<<<< HEAD
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+=======
+  top: 30%;
+>>>>>>> a14ec314984790bf2da85da15bdd96f7e77e9f3d
 }
 
 .rightSideprojects {
@@ -121,9 +140,12 @@ h6 {
 }
 
 @media only screen and (max-width: 600px) {
+<<<<<<< HEAD
   .homepage {
     padding: 100px;
   }
+=======
+>>>>>>> a14ec314984790bf2da85da15bdd96f7e77e9f3d
   .homepage,
   .about,
   .projects,
@@ -143,10 +165,14 @@ h6 {
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 800px) and (min-width: 600px) {
   .homepage {
     padding: 100px;
   }
+=======
+@media only screen and (max-width: 760px) and (min-width: 600px) {
+>>>>>>> a14ec314984790bf2da85da15bdd96f7e77e9f3d
   .homepage,
   .about,
   .projects,
