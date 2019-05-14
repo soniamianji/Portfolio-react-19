@@ -8,10 +8,6 @@ import {
   AwesomeButtonProgress,
   AwesomeButtonSocial
 } from "react-awesome-button";
-<<<<<<< HEAD
-=======
-// import { AwesomeButtonStyles } from "react-awesome-button/src/styles/themes/theme-eric/styles.scss";
->>>>>>> a14ec314984790bf2da85da15bdd96f7e77e9f3d
 import { AwesomeButtonStyles } from "react-awesome-button/src/styles/themes/theme-amber/styles.scss";
 
 class Home extends Component {
@@ -59,9 +55,7 @@ class Home extends Component {
       behavior: "instant"
     });
   };
-  componentDidMount() {
-    this.props.refCallBack(this.scrollToMyRef);
-  }
+
   // componentWillMount() {
   //   if (this.props.location.pathname !== "/") {
   //     this.scrollToMyRef();
