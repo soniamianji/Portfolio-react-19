@@ -93,7 +93,9 @@ class Home extends Component {
           <div className="col-md rightSideAbout bg-white">
             <About />
           </div>
-          <div className="soniapic" />
+          <div className="soniapic">
+            <img src={require("../../images/about/sono.jpg")} />
+          </div>
         </section>
 
         <section className="projects row bg-white">
