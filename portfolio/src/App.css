@@ -155,12 +155,18 @@ h6 {
   .myName {
     color: #dd5341;
     top: 20%;
+    font-size: 3rem !important;
   }
-  .descHolder > button,
-  h3 {
-    float: left;
-    display: block;
-    clear: both;
+  .descHolder {
+    text-align: left;
+  }
+  .descHolder > h3 {
+    text-align: left;
+    padding-top: 1rem;
+    margin-top: 0;
+  }
+  .descHolder > button {
+    margin-top: none;
   }
   .about > .soniapic,
   img {
