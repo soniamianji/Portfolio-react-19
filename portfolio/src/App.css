@@ -13,6 +13,21 @@
 .lastSection {
   height: 100vh;
 }
+.about {
+  position: relative;
+}
+.about > .soniapic {
+  position: absolute;
+  background-image: url(/static/media/sono.905d9b0d.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 2px solid #dd5341;
+  left: 46.6%;
+  top: 10%;
+  width: 100px;
+  height: 100px;
+}
 
 .textNav {
   font-weight: 700;
@@ -163,5 +178,8 @@ h6 {
     float: left;
     display: block !important;
     clear: both;
+  }
+  .about > .soniapic {
+    display: none;
   }
 }
