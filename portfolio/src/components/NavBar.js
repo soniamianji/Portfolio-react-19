@@ -30,7 +30,7 @@ class NavBar extends Component {
               </li>
               <li>
                 <Link to="/" onClick={this.contactHandler}>
-                  Contact Info
+                  Contact me
                 </Link>
               </li>
             </ul>
