@@ -1,0 +1,47 @@
+.contactBoxes {
+  margin: 0 auto;
+  width: 360px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contactBoxes > a > div {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin: 10px;
+}
+
+.git {
+  background-image: url("../images/icons/git.png");
+}
+
+.git:hover {
+  background-image: url("../images/icons/gitHover.png");
+  background-size: 65px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.mail {
+  background-image: url("../images/icons/gmail.png");
+}
+.mail:hover {
+  background-image: url("../images/icons/gmailHover.svg");
+  background-size: 155px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.linkedIn {
+  background-image: url("../images/icons/linkedIn.svg");
+}
+.linkedIn:hover {
+  background-image: url("../images/icons/linkedInHover.svg");
+  background-size: 55px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

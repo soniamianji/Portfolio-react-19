@@ -1,0 +1,12 @@
+* {
+  font-family: automate, sans-serif;
+}
+
+.imageHolder {
+  width: 700px;
+}
+.image {
+  display: block;
+  height: auto;
+  width: 100%;
+}

@@ -1,161 +1,65 @@
 import React, { Component } from "react";
-import NavBar from "../NavBar";
-import AppRedesign from "../projects/AppRedesign";
+import ProjectPage from "../projects/ProjectPage";
 import "../../styles/projects.css";
 import { Link } from "react-router-dom";
+import Data from "../../rawData/thumbnailInfo";
+import posed, { PoseGroup } from "react-pose";
 
 class Projects extends Component {
   constructor() {
     super();
+
     this.state = {
-      projectLists: [1, 2, 3, 4, 5, 6, 7]
+      data: Data
     };
   }
 
   render() {
+    let content = this.state.data;
+    let example = this.state.projectLists;
+    let iterate = 2;
+    const incremeantIterate = () => {
+      iterate++;
+    };
+    const resetIterate = () => {
+      iterate = 1;
+    };
+    const urlGenerator = title => {
+      return "/projects/" + title;
+    };
     return (
-      <div className="projectContainer bg-dark  ">
-        <div className=" d-flex justify-content-center ">
-          <NavBar />
-        </div>
-
-        <div class="container p-5">
-          <div class="row ">
-            <div class="col-sm-6 col-md-6 col-lg-4 p-0 projectItems">
-              <Link to="/appRedesign">
-                <img
-                  src={require("../../images/appRedesign.jpg")}
-                  alt="appRedesign"
-                  className="image"
-                />
-
-                <div class="middle">
-                  <div class="text">
-                    Some explanations regarding the project One
+      <div className="projectContainer bg-dark">
+        <div class="projectItemHolder">
+          {content &&
+            content.map((item, i) => {
+              return iterate == 5 ? (
+                <React.Fragment>
+                  <div className="p-0 projectItems thumb_big">
+                    <Link to={urlGenerator(item.title)}>
+                      {<img src={item.image} className="image" />}
+                      <div class="middle">
+                        <div class="text">{item.description}</div>
+                      </div>
+                    </Link>
                   </div>
-                </div>
-              </Link>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 p-0 bg-warning projectItems">
-              <img
-                src={require("../../images/swiss.png")}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              One of three columns
-            </div>
 
-            <div class="col-sm-6 col-md-6 col-lg-4 p-0 bg-white projectItems ">
-              <img
-                src={require("../../images/tut.png")}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-            </div>
-          </div>
+                  {resetIterate()}
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <div className=" p-0 projectItems thumb_small">
+                    <Link to={urlGenerator(item.title)}>
+                      {<img src={item.image} className="image" />}
+                      <div class="middle">
+                        <div class="text">{item.description}</div>
+                      </div>
+                    </Link>
+                  </div>
 
-          <div class="row ">
-            <div class="col-lg-8 p-0 bg-white projectItems">
-              <img
-                src={require("../../images/wine.jpg")}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              col-8
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 p-0 bgCustom projectItems">
-              <img
-                src={require("../../images/appRedesign.jpg")}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row ">
-            <div class="col-sm-6 col-md-6 col-lg-4 bg-warning projectItems">
-              <img
-                src={"../../images/infoGraph.png"}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              One of three columns
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 bg-white projectItems">
-              <img
-                src={"../../images/swiss.png"}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              One of three columns
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 bg-warning projectItems ">
-              <img
-                src={"../../images/wine.jpg"}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              One of three columns
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-8 bgCustom  projectItems">
-              <img src={"../.."} alt="appRedesign" className="image" />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              col-8
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 bg-white projectItems">
-              <img
-                src={"../../images/infographic.png"}
-                alt="appRedesign"
-                className="image"
-              />
-              <div class="middle">
-                <div class="text">
-                  Some explanations regarding the project One
-                </div>
-              </div>
-              col-4
-            </div>
-          </div>
+                  {incremeantIterate()}
+                </React.Fragment>
+              );
+            })}
         </div>
       </div>
     );

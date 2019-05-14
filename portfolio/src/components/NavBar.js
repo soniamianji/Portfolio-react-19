@@ -1,54 +1,41 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import "../styles/nav.css";
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+  }
+  contactHandler = () => {
+    this.props.setContactClicked(true);
+  };
+  aboutHandler = () => {
+    this.props.setAboutClicked(true);
+  };
   render() {
     return (
-      <div className="App">
-        <nav className="navbar navbar-expand-md bg-transparent justify-content-center">
-          <button
-            className="navbar-toggler ml-1"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsingNavbar2"
-          >
-            <span className="navbar-toggler-icon" />
-          </button>
-          <div
-            className="navbar-collapse collapse justify-content-between align-items-center w-100"
-            id="collapsingNavbar2"
-          >
-            <ul className="navbar-nav mx-auto text-center">
-              <li className="nav-item active">
-                <Link className="nav-link textNav" to="/">
-                  Home
-                </Link>
-                <span className="sr-only">Home</span>
+      <div className="d-flex bg-light justify-content-end">
+        <div className="container">
+          <nav className="nav">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link textNav" to="/projects">
-                  Projects
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/" onClick={this.aboutHandler}>
+                  About Me
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link textNav" to="/">
-                  Contact Me
+              <li>
+                <Link to="/" onClick={this.contactHandler}>
+                  Contact Info
                 </Link>
               </li>
             </ul>
-            <ul className="nav navbar-nav flex-row justify-content-center flex-nowrap">
-              <li className="nav-item">
-                <a className="nav-link" href="">
-                  <i className="fa fa-facebook mr-1" />
-                </a>{" "}
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="">
-                  <i className="fa fa-twitter" />
-                </a>{" "}
-              </li>
-            </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
     );
   }

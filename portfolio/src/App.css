@@ -1,80 +1,167 @@
+* {
+  font-family: automate, sans-serif;
+}
 .homepage {
+  background-image: url("../src/images/about/Sonolo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.homepage,
+.about,
+.projects,
+.contact,
+.lastSection {
   height: 100vh;
 }
+
 .textNav {
-  font-family: automate, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #dd5341;
 }
 .myName {
-  font-family: automate, sans-serif;
-  font-weight: 700;
-  font-style: normal;
   color: #dd5341;
   top: 40%;
 }
-.about {
-  height: 100vh;
+.descHolder {
+  display: block;
+  text-align: center;
 }
-.leftSideAbout {
-  height: 100vh;
-  width: 50%;
-  position: relative;
+
+.descHolder > button,
+h3 {
+  margin-top: 38px;
+  text-align: center;
 }
-/* .navHolder {
-  position: absolute;
-  top: 90%;
-  left: 50%;
+.descHolder > h3 {
+  margin-top: 38px;
+}
+/* .descHolder > button {
+  float: right;
 } */
-.navHolderbout {
+button > span > span > span > a {
+  text-decoration: none !important;
+  color: white !important;
+}
+.yellowColor {
+  color: darkgoldenrod;
+}
+
+.homepage,
+.leftSideAbout,
+.rightSideAbout,
+.rightSideprojects,
+.leftSideprojects,
+.leftSideContact,
+.rightSideContact,
+.lastSection {
+  position: relative;
+  min-height: 600px !important;
+}
+
+.textAboutWrapper {
+  overflow-y: scroll;
   position: absolute;
-  top: 90%;
-  left: 35%;
+  height: 100%;
+  width: 100%;
+  padding-right: 40px;
+  padding-left: 40px;
 }
+/* .imgHolder {
+  background-image: url("../src/images/about/sonia.jpeg");
+  background-size: cover;
+  height: 300px;
+  width: 200px;
+} */
 
+.textAboutWrapper > .row > .col-sm-12 > h2 {
+  color: #dd5341;
+}
+.textAboutWrapper > .row > .col-sm-12 > p {
+  font-family: "Karla", sans-serif;
+}
+.textAboutWrapper > h2,
+h4,
+h6 {
+  color: #dd5341;
+}
+.skillset {
+  margin: 2rem 0;
+  padding-left: 3rem;
+}
+.skillset > p {
+  font-family: "Karla", sans-serif !important;
+  font-size: 14px;
+}
+.textAboutWrapper > p {
+  font-family: "Karla", sans-serif !important;
+}
 .sectionText {
-  font-family: automate, sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #dd5341;
-  top: 30%;
-}
-.sectionTextContact {
-  font-family: automate, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #dd5341;
-  top: 30%;
-}
-.rightSideAbout {
-  height: 100vh;
-  width: 50%;
-  font-family: automate, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.projects {
-  height: 100vh;
-}
 .rightSideprojects {
-  background-image: url("https://i.pinimg.com/736x/a4/8a/eb/a48aeb33f62b8a9f3d5af97abbe89fa0--poster-design-inspiration-take-risks.jpg");
+  /* background-image: url("https://i.pinimg.com/736x/a4/8a/eb/a48aeb33f62b8a9f3d5af97abbe89fa0--poster-design-inspiration-take-risks.jpg"); */
+  background-image: url("../src/images/about/worksimage.jpg");
   background-attachment: fixed;
   background-color: none;
 }
-.leftSideprojects {
-  height: 100vh;
-  width: 50%;
-}
-
-.contact {
-  height: 100vh;
-}
-
-.lastSection {
-  height: 100vh;
-  position: relative;
+.leftSideprojects > .sectionText {
+  bottom: 5px;
 }
 
 .linkBtn {
-  top: 60%;
+  top: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage {
+    padding: 100px;
+  }
+  .homepage,
+  .about,
+  .projects,
+  .contact,
+  .lastSection {
+    height: auto;
+  }
+  .myName {
+    color: #dd5341;
+    top: 20%;
+  }
+  .descHolder > button,
+  h3 {
+    float: left;
+    display: block;
+    clear: both;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+  .homepage {
+    padding: 100px;
+  }
+  .homepage,
+  .about,
+  .projects,
+  .contact,
+  .lastSection {
+    height: auto;
+  }
+  .myName {
+    top: 15%;
+    left: 15%;
+  }
+  .descHolder > button,
+  h3 {
+    float: left;
+    display: block !important;
+    clear: both;
+  }
 }
