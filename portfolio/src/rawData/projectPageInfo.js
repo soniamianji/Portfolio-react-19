@@ -154,8 +154,8 @@ let Data = [
             "../../../imgs/uxDesign/kohlanta-01.png",
             "../../../imgs/uxDesign/kohlanta-02.png",
             "../../../imgs/uxDesign/kohlanta-03.png",
-            "../../../imgs/uxDesign/kohlanta-05.png"
-            // "../../../imgs/uxDesign/koh-mo-de.gif"
+            "../../../imgs/uxDesign/kohlanta-05.png",
+            "../../../imgs/uxDesign/koh-final.gif"
           ]
         },
 
