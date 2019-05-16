@@ -39,6 +39,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.textAboutWrapper > .row > .col-sm-12 > h2 {
+  padding-left: 1rem !important;
+}
 .parag {
   font-size: 14px;
   padding-right: 1rem;
@@ -124,6 +127,7 @@ h6 {
 .textAboutWrapper > p {
   font-family: "Karla", sans-serif !important;
 }
+
 .sectionText {
   font-weight: 700;
   font-style: normal;
@@ -179,6 +183,9 @@ h6 {
   }
   .descHolder > button {
     margin-top: none;
+  }
+  .parag {
+    font-size: 16px;
   }
   .about > .soniapic,
   img {
