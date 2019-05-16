@@ -68,7 +68,7 @@ class Home extends Component {
     return (
       <div>
         <section className="homepage bg-dark d-flex justify-content-center">
-          <h1 className="myName position-absolute display-3 ">
+          <h1 className="myName position-absolute ">
             Sonia Mianji Johnsson
             <div className="descHolder">
               <h3 className="yellowColor">Code Monkey in training</h3>

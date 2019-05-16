@@ -8,7 +8,7 @@ class About extends Component {
           <div className="col-sm-12 ">
             <h2 className="pl-5 pt-5">Hi there!</h2>
 
-            <p className="pl-5">
+            <p className="parag">
               My name is Sonia Mianji Johnsson. I am born in 91 and I currently
               reside in Jönköping Sweden where I am enrolled in New Media Design
               at Jönköping University. As the name might suggest its an
@@ -18,7 +18,7 @@ class About extends Component {
               and web development.
             </p>
 
-            <p className=" pr-5 pl-5">
+            <p className="parag">
               I am very tenacious in my pursuit of knowledge. Programming and
               web-development is my primary focus and interest. I am a good team
               player and as such I aspire to one day assemble my own brilliant
@@ -26,12 +26,12 @@ class About extends Component {
               our business to improve the human experience by one line of code
               at the time.
             </p>
-            <p className=" pr-5 pl-5">
+            <p className="parag">
               Below you can see my ever expanding skill set.
             </p>
           </div>
         </div>
-        <div className=" skillset row pr-5 pl-5">
+        <div className=" skillset row parag">
           <div className="col-sm-12">
             <h4>Tech</h4>
             <h6>UX and Prototyping tools:</h6>
