@@ -13,6 +13,11 @@ class Projects extends Component {
       data: Data
     };
   }
+  componentDidMount = () => window.scrollTo(0, 0);
+
+  componentDidUpdate = prevProps => {
+    if (this.props.location !== prevProps.location) window.scrollTo(0, 0);
+  };
 
   render() {
     let content = this.state.data;
