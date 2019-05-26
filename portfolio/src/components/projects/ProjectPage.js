@@ -32,7 +32,7 @@ class ProjectPage extends Component {
         {data &&
           data.content.map((item, i) => {
             return item.type === "text" ? (
-              <div>{"dfd"}</div>
+              <div>{""}</div>
             ) : item.type === "img" ? (
               item.src.map((pic, i) => {
                 return (
