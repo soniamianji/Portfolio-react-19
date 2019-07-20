@@ -5,12 +5,20 @@ class NavBar extends Component {
   constructor(props) {
     super(props);
   }
+  // componentDidMount() {
+  //   // use the node ref to create the animation
+  //   this.myTween
+  //     .to(this.myElement, 0.5, { x: 100 })
+  //     .to(this.myElement, 0.5, { y: 100, rotation: 180 })
+  //     .play();
+  // }
   contactHandler = () => {
     this.props.setContactClicked(true);
   };
   aboutHandler = () => {
     this.props.setAboutClicked(true);
   };
+
   render() {
     return (
       <div className="d-flex bg-light justify-content-end">

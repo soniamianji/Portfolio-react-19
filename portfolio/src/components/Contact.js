@@ -6,15 +6,15 @@ class Contact extends Component {
     return (
       <div className="contactBoxes">
         <a href="https://github.com/soniamianji">
-          <div className="git" />
+          <div className="contactBoxes__git" />
         </a>
 
         <a href="mailto:soniamianji1@gmail.com">
-          <div className="mail" />
+          <div className="contactBoxes__mail" />
         </a>
 
         <a href="https://www.linkedin.com/in/sonia-mianji-b8750258/">
-          <div className="linkedIn" />
+          <div className="contactBoxes__linkedIn" />
         </a>
       </div>
     );

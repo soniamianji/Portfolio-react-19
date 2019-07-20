@@ -36,6 +36,7 @@ class App extends Component {
     });
   };
   render() {
+    const supportsHistory = "pushState" in window.history;
     return (
       <div className="App">
         <Router>
@@ -44,29 +45,31 @@ class App extends Component {
               setContactClicked={this.setContactClicked}
               setAboutClicked={this.setAboutClicked}
             />
-            <GlobalRoute
-              exact
-              path="/"
-              refCallBack={this.refCallBack}
-              component={Home}
-              isContactClicked={this.state.isContactClicked}
-              isAboutClicked={this.state.isAboutClicked}
-              setContactClicked={this.setContactClicked}
-              setAboutClicked={this.setAboutClicked}
-            />
-            <GlobalRoute
-              exact
-              path="/projects/"
-              component={Projects}
-              setAboutClicked={this.setAboutClicked}
-              setContactClicked={this.setContactClicked}
-            />
-            <GlobalRoute
-              path="/projects/:title"
-              component={ProjectPage}
-              setAboutClicked={this.setAboutClicked}
-              setContactClicked={this.setContactClicked}
-            />
+            <Switch>
+              <GlobalRoute
+                exact
+                path="/"
+                refCallBack={this.refCallBack}
+                component={Home}
+                isContactClicked={this.state.isContactClicked}
+                isAboutClicked={this.state.isAboutClicked}
+                setContactClicked={this.setContactClicked}
+                setAboutClicked={this.setAboutClicked}
+              />
+              <GlobalRoute
+                exact
+                path="/projects/"
+                component={Projects}
+                setAboutClicked={this.setAboutClicked}
+                setContactClicked={this.setContactClicked}
+              />
+              <GlobalRoute
+                path="/projects/:title"
+                component={ProjectPage}
+                setAboutClicked={this.setAboutClicked}
+                setContactClicked={this.setContactClicked}
+              />
+            </Switch>
             <GoogleFontLoader
               fonts={[
                 {

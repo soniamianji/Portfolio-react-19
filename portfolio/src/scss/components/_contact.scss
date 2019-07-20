@@ -1,0 +1,46 @@
+.contactBoxes {
+  margin: 0 auto;
+  width: 360px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    div {
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+      margin: 10px;
+    }
+  }
+  .contactBoxes__git {
+    background-image: url("../src/images/icons/git.png");
+  }
+  .contactBoxes__git:hover {
+    background-image: url("../src/images/icons/gitHover.png");
+    background-size: 65px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .contactBoxes__mail {
+    background-image: url("../src/images/icons/gmail.png");
+  }
+  .contactBoxes__mail:hover {
+    background-image: url("../src/images/icons/gmailHover.svg");
+    background-size: 155px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contactBoxes__linkedIn {
+    background-image: url("../src/images/icons/linkedIn.svg");
+  }
+  .contactBoxes__linkedIn:hover {
+    background-image: url("../src/images/icons/linkedInHover.svg");
+    background-size: 55px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

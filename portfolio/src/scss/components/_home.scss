@@ -1,0 +1,139 @@
+.homepage {
+  height: 600px;
+  background-image: url("../src/images/about/Sonolo.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @media only screen and (min-width: 750px) {
+    height: 100vh;
+  }
+  .homepage--contentHolder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    .homepage__name {
+      color: $rose;
+      text-align: center;
+      margin-bottom: 11px;
+    }
+    .homepage__description {
+      color: $dark-yellow;
+      text-align: center;
+      margin-bottom: 22px;
+    }
+    .homepage__button {
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+//Section About
+.about {
+  .about__leftSide {
+    min-height: 600px;
+    position: relative;
+    .about___leftSide__sectionText {
+      color: $rose;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      position: absolute;
+    }
+  }
+  .about__rightSide {
+    min-height: 600px;
+    .about__rightSide__pic {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media only screen and (min-width: 750px) {
+    height: 100vh;
+    .about__leftSide {
+      position: relative;
+      .about___leftSide__sectionText {
+        top: 25%;
+      }
+    }
+    .about__rightSide {
+      .about__rightSide__pic {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+.projects {
+  .projects__leftSide {
+    height: 600px;
+    position: relative;
+    background-color: $yellow;
+    .projects__leftSide__sectionText {
+      color: $rose;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      position: absolute;
+    }
+  }
+  .projects__rightSide {
+    height: 600px;
+    position: relative;
+    background-image: url("../src/images/about/worksimage.jpg");
+    background-attachment: fixed;
+    background-color: none;
+  }
+  @media only screen and (min-width: 750px) {
+    height: 100vh;
+    .projects__leftSide {
+      position: relative;
+      border: none;
+      .projects__leftSide__sectionText {
+        top: 40%;
+      }
+    }
+    .projects__rightSide {
+      height: 100vh;
+    }
+  }
+}
+
+.contact {
+  .contact__leftSide {
+    min-height: 600px;
+    position: relative;
+    .contact__leftSide__sectionText {
+      color: $rose;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      position: absolute;
+    }
+  }
+  .contact__rightSide {
+    position: relative;
+    min-height: 600px;
+    border: 1px solid $rose;
+  }
+  @media only screen and (min-width: 750px) {
+    height: 100vh;
+    .contact__leftSide {
+      position: relative;
+      .contact__leftSide__sectionText {
+        top: 50%;
+      }
+    }
+    .contact__rightSide {
+      border: none;
+    }
+  }
+}
