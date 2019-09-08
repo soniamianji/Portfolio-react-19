@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../../styles/projectPage.css";
 // import { Slide } from "react-slideshow-image";
-import Carousel from "nuka-carousel";
 import Data from "../../rawData/projectPageInfo.js";
 
 class ProjectPage extends Component {

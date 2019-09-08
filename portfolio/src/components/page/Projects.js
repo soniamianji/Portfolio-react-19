@@ -3,7 +3,6 @@ import ProjectPage from "../projects/ProjectPage";
 import "../../styles/projects.css";
 import { Link } from "react-router-dom";
 import Data from "../../rawData/thumbnailInfo";
-import posed, { PoseGroup } from "react-pose";
 
 class Projects extends Component {
   constructor() {
